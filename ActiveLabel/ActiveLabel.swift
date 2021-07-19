@@ -24,6 +24,8 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
     open var enabledTypes: [ActiveType] = [.mention, .hashtag, .url]
     
     open var urlMaximumLength: Int?
+  
+    open var isSelectedElement: Bool { return self.selectedElement != nil }
     
     open var configureLinkAttribute: ConfigureLinkAttribute?
     
